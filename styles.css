@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+  .grid_layout {
+    display: grid;
+    grid-template-areas: "header header" "mainContent " "footer footer";
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-auto-rows: 100px;
+    text-align: center;
+    color: rgb(100, 66, 66);
+      /* height: 45rem; */
+  }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    grid-area: header;
+    background-color: #333;
+    padding: 20px 0;
+    /* color:#fff; */
+  }
+  .main {
+    grid-area: mainContent;
+    background-color:rgb(255, 255, 255);
+  }
+  .footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    /* height: 20%; */
+  }
+  .nav ul a {
+    /* display: flex;
+    flex-wrap: wrap; */
+    align-items: center;
+    text-decoration: none;
+    color: rgb(226, 221, 221);
+  padding: 20px;
+  }
+  .logo h3 {
+     color: white;
+     padding-left: 15px;
+  }
+  .icon {
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+  }
+  .grid_example {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0px;
+    margin-bottom: 100px;
+    background-image:url(./images/Dynamische\ Business\ Portraitfoto\ Fotoshooting.jpg) ;
+  }
+  .grid_example p {
+    color: rgb(221, 216, 216);
+    /* margin: 20px; */
+    padding-right: 400px;
+  }
+  .grid_example h1 {
+    color: rgb(233, 200, 109);
+    font-weight: 800;
+    padding-right: 830px;
+  }
+  .button {
+    color:white;
+    /* opacity: 0.7; */
+    border-radius: 30px;
+    background-color: transparent;
+    border-color: rgb(223, 108, 108);
+    padding: 8px 15px;
+
+    
+  
+  }
+  .grid_example a {
+    color: #fff;
+    font-family: serif;
+    padding: 0 15px;
+  }
+  .section-3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 200px);
+    /* height: 5rem; */
+    /* align-content: center;
+    align-items: center; */
+    gap: 10px;
+  }
+
+  .img-1 {
+    /* background-color: red; */
+    background-image: url(/images/Tecnologia\,\ Digital\,\ Computador\ Imagens\ de\ fundo\ gratuitas\,\ Fundo\ Diodo\ Emissor\ De\ Luz\ Diodo\ Dispositivo\ Luz\ Background\ Foto\ PNG\ e\ vetores\ de\ fundo.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .img-2 {
+    background-image: url(./images/10.jpg);
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+  }
+  .img-3 {
+    background-image: url(./images/Tecnologia\,\ Digital\,\ Computador\ Imagens\ de\ fundo\ gratuitas\,\ Fundo\ Diodo\ Emissor\ De\ Luz\ Diodo\ Dispositivo\ Luz\ Background\ Foto\ PNG\ e\ vetores\ de\ fundo.jpg);
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .img-4 {
+    background-image:url(./images/The\ Best\ Background\ Images\ for\ Any\ Project.jpg);
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+  }
+  .img-5 {
+    background-image: url(./images/Mental\ Health\ Tips.jpg);
+    grid-column: 1/2;
+    grid-row: 2/4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  .img-6 {
+    background-image: url(./images/Premium\ Photo\ _\ Programming\ code\ abstract\ technology\ background\ of\ software\ developer\ and\ \ Computer\ script.jpg);
+    grid-column: 2/3;
+    grid-row: 3/5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .img-7 {
+    background-image: url(./images/Dynamische\ Business\ Portraitfoto\ Fotoshooting.jpg);
+    grid-column: 3/4;
+    grid-row: 2/4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .img-8 {
+    background-image: url(./images/Software\ Consulting\ and\ Development\ Company.jpg);
+    grid-column: 4/5;
+    grid-row: 3/4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+.img-9 {
+  background-image: url(./images/Technology\ Future\ Artificial\ Intelligence\ Background\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpg);
+  grid-column: 1/2;
+  grid-row:1/2 ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-10 {
+  background-image: url(./images/Justitia.jpg);
+  grid-row: 5/6;
+  grid-column: 2/3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-11 {
+  background-image: url(./images/Mental\ Health\ Tips.jpg);
+  grid-column: 3/5;
+  grid-row: 4/6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
